@@ -16,7 +16,7 @@
             <a href="#">Inicio</a>
             <a href="#">Nosotros</a>
             <a href="#">Clientes</a>
-            <a href="#">Contacto</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
@@ -25,11 +25,11 @@
             <h1>Tec & Tech</h1>
             <h2>Diseño y desarrollo Freelancer</h2>
             <p><i class="fas fa-map-marker-alt"></i> CDMX, Benito Juárez</p>
-            <a href="#" class="boton">Contactar</a>
+            <a href="#contacto" class="boton">Contactar</a>
         </div>
     </div>
-
-    <main class="servicios contenedor">
+<div class="contenedor">
+    <main class="servicios ">
         <h2>Nuestros servicios</h2>
         <div class="contenedor-servicios">
             <div class="servicio">
@@ -62,5 +62,33 @@
             </div>
         </div>
     </main>
+
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <form method="POST">
+            <legend>Contáctanos llenando todos los campos</legend>
+            <div class="contenedor-campos">
+                <div class="campo">
+                    <label for="txtNombre">Nombre: </label>
+                    <input type="text" name="txtNombre" placeholder="Nombre Completo" required>
+                </div><div class="campo">
+                    <label for="txtTel">Teléfono: </label>
+                    <input type="tel" name="txtTel" placeholder="10 caractéres" required>
+                </div>
+                <div class="campo w-100">
+                    <label for="txtCorreo">Correo: </label>
+                    <input type="mail" name="txtCorreo" placeholder="ejemplo@dominio.com" required>
+                </div>
+                <div class="campo w-100">
+                    <label for="txtMensaje">Mensaje: </label>
+                    <textarea name="txtMensaje" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div class="enviar">
+                    <input type="submit" name="btnEnviar" class="boton" value="Enviar">
+                </div>
+            </div>
+        </form>
+    </section>
+</div>
 </body>
 </html>

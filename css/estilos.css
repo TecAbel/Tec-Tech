@@ -25,6 +25,9 @@ h1,h2,h3,h4{
     margin:0;
     text-align: center;
 }
+h2{
+    padding-bottom: 1rem;
+}
 h3{
     color: var(--secundario);
 }
@@ -70,6 +73,22 @@ p{
     font-size: 1.8rem;
     line-height: 2;
     margin:1rem;
+}
+form{
+    border-radius: 1rem;
+    background: #444343;
+    padding: 2rem;
+    color: white;
+}
+
+form legend{
+    /*display: block;
+    text-align: center;*/
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: var(--primario);
+    font-size: 1.8rem;
 }
 .hero{
     height: 45rem;
@@ -150,6 +169,10 @@ p{
 
         flex: 1;
     }
+    form{
+        max-width: 65%;
+        margin: 0 auto;
+    }
 }
 
 .icono{
@@ -163,3 +186,42 @@ p{
     font-size: 3rem;  
      
 }
+
+.campo{
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+@media(min-width:768px){
+    .contenedor-campos{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .campo{
+        flex: 0 0 calc(50% - 1rem);
+    }
+    .enviar{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.campo label{
+    flex: 0 0 9rem;
+}
+.campo input{
+    flex: 1;
+    height: 4rem;
+}
+.campo textarea{
+    flex: 1;
+    height: 7rem;
+}
+.w-100{
+    flex: 0 0 100%;
+}
+.enviar{
+    text-align: center;
+}
+
