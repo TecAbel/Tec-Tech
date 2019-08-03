@@ -209,6 +209,7 @@ form legend{
 
 .campo label{
     flex: 0 0 9rem;
+    margin-right: 1rem;
 }
 .campo input{
     flex: 1;
