@@ -213,11 +213,11 @@ form legend{
 }
 .campo input{
     flex: 1;
-    height: 4rem;
+    height: 3rem;
 }
 .campo textarea{
     flex: 1;
-    height: 7rem;
+    height: 6rem;
 }
 .w-100{
     flex: 0 0 100%;
